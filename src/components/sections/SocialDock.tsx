@@ -13,7 +13,7 @@ export default function SocialDock() {
     <div className="fixed bottom-6 left-6 z-40 hidden md:flex flex-col gap-4">
 
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/Sumitc0de/"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 backdrop-blur transition hover:scale-110 hover:border-cyan-400"
@@ -22,7 +22,7 @@ export default function SocialDock() {
       </a>
 
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://linkedin.com/in/sumit-vishwakarma-b818b7268/"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 backdrop-blur transition hover:scale-110 hover:border-cyan-400"
@@ -31,7 +31,7 @@ export default function SocialDock() {
       </a>
 
       <a
-        href="https://twitter.com/yourusername"
+        href="https://x.com/DeveloperrSumit"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 backdrop-blur transition hover:scale-110 hover:border-blue-400"
@@ -40,7 +40,7 @@ export default function SocialDock() {
       </a>
 
       <a
-        href="https://instagram.com/yourusername"
+        href="https://instagram.com/aihackwithsumit"
         target="_blank"
         rel="noopener noreferrer"
         className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 backdrop-blur transition hover:scale-110 hover:border-pink-400"
@@ -49,7 +49,7 @@ export default function SocialDock() {
       </a>
 
       <a
-        href="mailto:youremail@gmail.com"
+        href="mailto:developwithsumit009@gmail.com"
         className="group flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/40 backdrop-blur transition hover:scale-110 hover:border-green-400"
       >
         <FaEnvelope className="text-gray-400 transition group-hover:text-green-400" />
