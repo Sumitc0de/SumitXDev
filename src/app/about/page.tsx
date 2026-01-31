@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { PRIMARY_MODE } from "@/constants/system";
+import { PROJECTS_BUILT } from "@/constants/system";
 
 export default function AboutPage() {
     return (
@@ -28,7 +30,7 @@ export default function AboutPage() {
             </section>
 
             {/* CORE GRID */}
-            <section >
+            <section>
                 <div className="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
 
                     {/* LEFT — ORIGIN + PHILOSOPHY */}
@@ -40,19 +42,30 @@ export default function AboutPage() {
                         </h2>
 
                         <p className="text-gray-400 leading-relaxed mb-4">
-                            I’m <span className="text-white font-medium">Sumit Vishwakarma</span> —
-                            an AI-focused engineer who believes software should
+                            I’m <span className="text-white font-medium">Sumit Vishwakarma</span> — an AI-focused
+                            engineer who believes software should
                             <span className="text-cyan-400"> reduce human effort</span>,
                             not increase complexity.
                         </p>
 
                         <p className="text-gray-400 leading-relaxed mb-4">
-                            I don’t build random tools.
-                            I design <span className="text-purple-400">systems</span> —
-                            AI-driven, automation-first, and scalable by default.
+                            I design <span className="text-purple-400">AI-driven, automation-first systems </span>
+
+                            built to scale by default — not isolated tools.
                         </p>
 
-                        <p className="text-gray-400 leading-relaxed">
+                        {/* NEW — PORTFOLIO FACTS */}
+                        <div className="mt-6 space-y-2 text-sm text-gray-400">
+                            <p>
+                                🎓 <span className="text-white">B.E. Computer Engineering</span>{" "}
+                                <span className="text-gray-500">(2024–2028 · Mumbai University)</span>
+                            </p>
+                            <p>
+                                🧩 <span className="text-white">Focus:</span> Full-Stack Web · Web + AI · CS/DSA
+                            </p>
+                        </div>
+
+                        <p className="mt-6 text-gray-400 leading-relaxed">
                             Every project follows one rule:
                             <br />
                             <span className="text-cyan-300">
@@ -73,7 +86,7 @@ export default function AboutPage() {
                             <div className="grid grid-cols-3 gap-4">
                                 <div>
                                     <p className="text-xs text-gray-400">Projects Built</p>
-                                    <p className="text-xl font-bold text-cyan-400">20+</p>
+                                    <p className="text-xl font-bold text-cyan-400">{PROJECTS_BUILT}</p>
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-400">Response Time</p>
@@ -81,7 +94,7 @@ export default function AboutPage() {
                                 </div>
                                 <div>
                                     <p className="text-xs text-gray-400">Primary Mode</p>
-                                    <p className="text-xl font-bold text-blue-400">AI</p>
+                                    <p className="text-xl font-bold text-blue-400">{PRIMARY_MODE}</p>
                                 </div>
                             </div>
                         </div>
@@ -93,9 +106,9 @@ export default function AboutPage() {
                             </h3>
 
                             <div className="space-y-3 text-sm text-gray-400">
-                                <p>🧠 <span className="text-white">AI Mode:</span> Prompt systems, automations, intelligence layers</p>
-                                <p>⚙️ <span className="text-white">Automation Mode:</span> Workflows, APIs, business logic</p>
-                                <p>🕸️ <span className="text-white">Web Mode:</span> Next.js, performance, SEO-first architecture</p>
+                                <p>🧠 <span className="text-white">AI Mode:</span> Prompt systems, intelligence layers</p>
+                                <p>⚙️ <span className="text-white">Automation Mode:</span> APIs, workflows, logic</p>
+                                <p>🕸️ <span className="text-white">Web Mode:</span> Next.js, performance, SEO</p>
                                 <p>🚀 <span className="text-white">Scale Mode:</span> Build once, multiply impact</p>
                             </div>
                         </div>
@@ -104,36 +117,32 @@ export default function AboutPage() {
             </section>
 
             {/* MANIFESTO */}
-            <section className="border-t border-white/10 px-6 py-20 sm:py-24 md:py-28">
+            <section className="border-t border-white/10 px-6 py-20 mt-10 sm:py-24 md:py-28">
                 <div className="mx-auto max-w-4xl text-center">
 
                     <h2 className="mb-6 text-2xl sm:text-3xl md:text-4xl font-extrabold">
                         Build Manifesto
                     </h2>
 
-                    <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
-                        I don’t chase trends.
-                        <br className="hidden sm:block" />
-                        I design systems that outlast them.
+                    <p className="text-gray-400 leading-relaxed">
+                        I don’t chase trends. I design systems that outlast them.
                     </p>
 
-                    <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
-                        AI is not a feature.
-                        <br className="hidden sm:block" />
-                        It’s the foundation.
+                    <p className="mt-4 text-gray-400 leading-relaxed">
+                        AI is not a feature. It’s the foundation.
                     </p>
 
-                    <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                    <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link
                             href="/projects"
-                            className="w-full sm:w-auto rounded-xl border border-white/20 px-6 py-3 text-sm sm:text-base transition hover:border-cyan-400 hover:text-cyan-400"
+                            className="rounded-xl border border-white/20 px-6 py-3 transition hover:border-cyan-400 hover:text-cyan-400"
                         >
                             View Projects
                         </Link>
 
                         <Link
                             href="/contact"
-                            className="w-full sm:w-auto rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-sm sm:text-base font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
+                            className="rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
                         >
                             Start a Conversation
                         </Link>

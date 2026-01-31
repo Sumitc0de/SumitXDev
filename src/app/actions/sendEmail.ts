@@ -5,22 +5,32 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(form: {
-  name: string;
-  email: string;
-  service: string;
-  message: string;
+    name: string;
+    email: string;
+    service: string;
+    message: string;
 }) {
-  if (!form.name || !form.email || !form.message) {
-    return { success: false };
-  }
+    // console.log("API KEY:", process.env.RESEND_API_KEY ? "FOUND" : "MISSING");
+    // console.log("CONTACT EMAIL:", process.env.CONTACT_EMAIL);
 
-  try {
-    await resend.emails.send({
-      from: "SumitOS <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL!,
-      replyTo: form.email,
-      subject: `New Portfolio Contact — ${form.name}`,
-      html: `
+    // console.log("ENV CHECK:", {
+    //   resend: !!process.env.RESEND_API_KEY,
+    //   email: process.env.CONTACT_EMAIL,
+    // });
+
+    // console.log("📨 sendEmail called", form);
+
+    if (!form.name || !form.email || !form.message) {
+        return { success: false };
+    }
+
+    try {
+        await resend.emails.send({
+            from: "SumitXDev <onboarding@resend.dev>",
+            to: process.env.CONTACT_EMAIL!,
+            replyTo: form.email,
+            subject: `New Portfolio Contact — ${form.name}`,
+            html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6">
           <h2>🚀 New Portfolio Message</h2>
           <p><strong>Name:</strong> ${form.name}</p>
@@ -30,11 +40,11 @@ export async function sendEmail(form: {
           <p>${form.message}</p>
         </div>
       `,
-    });
+        });
 
-    return { success: true };
-  } catch (error) {
-    console.error("EMAIL ERROR:", error);
-    return { success: false };
-  }
+        return { success: true };
+    } catch (error) {
+        console.error("EMAIL ERROR:", error);
+        return { success: false };
+    }
 }
