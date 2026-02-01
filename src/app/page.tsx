@@ -20,9 +20,9 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "Person",
             name: "Sumit Vishwakarma",
-            jobTitle: "Frontend Developer & AI Engineer",
+            jobTitle: "FullStack Developer, MERN Developer, Frontend Developer & AI Engineer",
             description:
-              "Frontend Developer specializing in React, Next.js, AI-powered web applications, and SaaS products.",
+              "Full-Stack Developer building end-to-end web & AI-powered SaaS products using React, Next.js, Node.js, and modern APIs.",
             url: siteUrl,
             image: `${siteUrl}/og.png`,
             address: {

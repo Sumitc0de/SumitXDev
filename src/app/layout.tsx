@@ -6,11 +6,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Sumit Vishwakarma | Frontend Developer & AI Engineer",
+    default: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
     template: "%s | Sumit Vishwakarma",
   },
   description:
-    "Sumit Vishwakarma is a Frontend Developer & AI Engineer building high-performance, SEO-optimized web applications using React, Next.js, and modern AI tools.",
+    "Sumit Vishwakarma is a FullStack Developer & AI Engineer building high-performance, SEO-optimized web applications using React, Next.js, and modern AI tools.",
   keywords: [
     "Sumit Vishwakarma",
     "Frontend Developer",
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     "AI Engineer",
     "Web Developer India",
     "Portfolio",
+    "FullStack Developer"
   ],
   authors: [{ name: "Sumit Vishwakarma" }],
   creator: "Sumit Vishwakarma",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Sumit Vishwakarma | Frontend Developer & AI Engineer",
+    title: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
     description:
       "Explore projects, case studies, and AI-powered web apps built by Sumit Vishwakarma using React and Next.js.",
     url: "/",
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sumit Vishwakarma | Developer Portfolio",
     description:
-      "Frontend Developer | React | Next.js | AI | SaaS Projects",
+      "FullStack Developer | Frontend Developer | React | Next.js | AI | SaaS Projects",
     images: ["/og.png"],
   },
 };
