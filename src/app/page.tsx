@@ -1,13 +1,18 @@
 import Hero from "@/components/sections/Hero";
-import CTA from "@/components/sections/CTA";
-import SocialDock from "@/components/sections/SocialDock";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import VibeProjects from "@/components/sections/VibeProjects";
+import CTA from "@/components/sections/CTA";
+import SocialDock from "@/components/sections/SocialDock";
 
 export default function HomePage() {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
   return (
     <main className="bg-[#020617] text-white">
-      {/* 🔥 ADVANCED SEO: Structured Data */}
+      {/* ================= SEO: STRUCTURED DATA ================= */}
+
+      {/* Person Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -18,22 +23,22 @@ export default function HomePage() {
             jobTitle: "Frontend Developer & AI Engineer",
             description:
               "Frontend Developer specializing in React, Next.js, AI-powered web applications, and SaaS products.",
-            url: process.env.NEXT_PUBLIC_SITE_URL,
-            image: `${process.env.NEXT_PUBLIC_SITE_URL}/og.png`,
+            url: siteUrl,
+            image: `${siteUrl}/og.png`,
             address: {
               "@type": "PostalAddress",
               addressLocality: "Mumbai",
               addressCountry: "India",
             },
             sameAs: [
-              "https://github.com/yourgithub",
-              "https://www.linkedin.com/in/yourlinkedin",
-              "https://twitter.com/yourtwitter",
+              "https://github.com/Sumitc0de",
+              "https://www.linkedin.com/in/sumit-vishwakarma",
             ],
             knowsAbout: [
               "React.js",
               "Next.js",
               "JavaScript",
+              "TypeScript",
               "AI Web Applications",
               "SaaS Development",
               "Frontend Engineering",
@@ -42,7 +47,7 @@ export default function HomePage() {
         }}
       />
 
-      {/* 🔥 ADVANCED SEO: Website Schema */}
+      {/* Website Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -50,21 +55,20 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "SumitXDev Portfolio",
-            url: process.env.NEXT_PUBLIC_SITE_URL,
+            url: siteUrl,
             description:
-              "Portfolio website showcasing React, Next.js, AI projects, and SaaS products by Sumit Vishwakarma.",
+              "Portfolio website of Sumit Vishwakarma showcasing React, Next.js, AI projects, and modern web development work.",
             inLanguage: "en",
           }),
         }}
       />
 
-      {/* ===== YOUR EXISTING UI (UNCHANGED) ===== */}
+      {/* ================= EXISTING UI (UNCHANGED) ================= */}
+
       <Hero />
       <FeaturedProjects />
       <VibeProjects />
       <CTA />
-
-      {/* Floating Socials */}
       <SocialDock />
     </main>
   );

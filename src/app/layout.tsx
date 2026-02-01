@@ -6,25 +6,46 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
+    default: "Sumit Vishwakarma | Frontend Developer & AI Engineer",
     template: "%s | Sumit Vishwakarma",
   },
   description:
-    "Portfolio of Sumit Vishwakarma — Frontend Developer specializing in React, Next.js, AI-powered web apps.",
+    "Sumit Vishwakarma is a Frontend Developer & AI Engineer building high-performance, SEO-optimized web applications using React, Next.js, and modern AI tools.",
+  keywords: [
+    "Sumit Vishwakarma",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "AI Engineer",
+    "Web Developer India",
+    "Portfolio",
+  ],
   authors: [{ name: "Sumit Vishwakarma" }],
   creator: "Sumit Vishwakarma",
 
-  // ✅ FIXED: no empty URL (this caused your crash)
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
   ),
 
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
   openGraph: {
-    title: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
+    title: "Sumit Vishwakarma | Frontend Developer & AI Engineer",
     description:
-      "React, Next.js, AI projects, SaaS products, and modern web development portfolio.",
+      "Explore projects, case studies, and AI-powered web apps built by Sumit Vishwakarma using React and Next.js.",
     url: "/",
-    siteName: "SumitXDev Portfolio",
+    siteName: "SumitXDev",
     images: [
       {
         url: "/og.png",
@@ -55,7 +76,6 @@ export default function RootLayout({
       <body className="bg-[#020617] text-white antialiased">
         <QuantumCursor />
         <Header />
-        {/* 👇 unchanged layout wrapper */}
         <div>{children}</div>
         <Footer />
       </body>
