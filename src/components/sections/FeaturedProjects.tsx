@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import { PROJECTS } from "@/constants/projects";
 
 export default function FeaturedProjects() {
   const siteUrl =
@@ -72,21 +73,16 @@ export default function FeaturedProjects() {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <ProjectCard
-            title="AI SaaS Platform"
-            description="An AI-powered SaaS platform for automation, analytics, and business workflows."
-            tech={["Next.js", "Node.js", "MongoDB", "AI APIs"]}
-            liveUrl="https://example.com"
-            githubUrl="https://github.com/yourname/ai-saas"
-          />
-
-          <ProjectCard
-            title="Smart Automation System"
-            description="End-to-end automation system for lead capture, email workflows, and CRM syncing."
-            tech={["Node.js", "Express", "Webhooks", "APIs"]}
-            liveUrl="https://example.com"
-            githubUrl="https://github.com/yourname/automation-system"
-          />
+          {PROJECTS.map((project) => (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              tech={project.tech}
+              liveUrl={project.liveUrl}
+              githubUrl={project.githubUrl}
+            />
+          ))}
         </div>
       </div>
     </section>

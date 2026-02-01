@@ -73,7 +73,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#020617] text-white antialiased">
+      <body className="bg-[#020617] min-h-screen  text-white antialiased">
         <QuantumCursor />
         <Header />
         <div>{children}</div>

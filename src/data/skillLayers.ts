@@ -24,7 +24,7 @@ export const skillLayers = {
       "Advanced Backend Architecture",
       "Scalable API Design",
       "Security & Auth (Advanced)",
-      "System Design",
+        "Generative AI (Python)",
       "Performance Optimization",
       "DSA (C++)",
     ],
@@ -34,9 +34,10 @@ export const skillLayers = {
     title: "Exploration Lab",
     subtitle: "Future-facing systems & research",
     skills: [
-      "Generative AI (Python)",
+    
       "Advanced AI Systems",
       "AI / ML Foundations",
+      "System Design",
       "Multi-Agent Systems",
       "AI SaaS Architecture",
       "Automation at Scale",
