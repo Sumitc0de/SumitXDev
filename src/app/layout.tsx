@@ -23,6 +23,14 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Sumit Vishwakarma" }],
   creator: "Sumit Vishwakarma",
+  applicationName: "SumitXDev Portfolio",
+  category: "technology",
+  referrer: "origin-when-cross-origin",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
@@ -47,6 +55,7 @@ export const metadata: Metadata = {
       "Explore projects, case studies, and AI-powered web apps built by Sumit Vishwakarma using React and Next.js.",
     url: "/",
     siteName: "SumitXDev",
+    locale: "en_US",
     images: [
       {
         url: "/og.png",
