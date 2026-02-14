@@ -3,8 +3,12 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import QuantumCursor from "@/components/ui/QuantumCursor";
 import type { Metadata } from "next";
+import FloatingChatWidget from "@/components/ai/FloatingChatWidget";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "p0K0c4tPfxdE1WExZ54l6Q8pabblz8R5GDmdePkDm0U",
+  },
   title: {
     default: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
     template: "%s | Sumit Vishwakarma",
@@ -29,8 +33,9 @@ export const metadata: Metadata = {
   ),
 
   alternates: {
-    canonical: "/",
+    canonical: process.env.NEXT_PUBLIC_SITE_URL,
   },
+
 
   robots: {
     index: true,
@@ -77,7 +82,11 @@ export default function RootLayout({
       <body className="bg-[#020617] min-h-screen  text-white antialiased">
         <QuantumCursor />
         <Header />
-        <div>{children}</div>
+        <div>{children}
+
+          {/* Floating AI Assistant */}
+          <FloatingChatWidget />
+        </div>
         <Footer />
       </body>
     </html>
