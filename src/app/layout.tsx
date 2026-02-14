@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import QuantumCursor from "@/components/ui/QuantumCursor";
 import type { Metadata } from "next";
-import FloatingChatWidget from "@/components/ai/FloatingChatWidget";
+
 
 export const metadata: Metadata = {
   verification: {
@@ -83,9 +83,7 @@ export default function RootLayout({
         <QuantumCursor />
         <Header />
         <div>{children}
-
-          {/* Floating AI Assistant */}
-          <FloatingChatWidget />
+          
         </div>
         <Footer />
       </body>
