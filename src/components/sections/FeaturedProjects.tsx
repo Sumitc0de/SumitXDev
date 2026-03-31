@@ -73,7 +73,7 @@ export default function FeaturedProjects() {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {PROJECTS.map((project) => (
+          {PROJECTS.filter(p => ["skillbridge-platform", "challenger-classes"].includes(p.id)).map((project) => (
             <ProjectCard
               key={project.id}
               title={project.title}

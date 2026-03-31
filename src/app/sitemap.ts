@@ -18,5 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: "https://sumit-x-dev.vercel.app/contact",
             lastModified: new Date(),
         },
+        {
+            url: "https://sumit-x-dev.vercel.app/services",
+            lastModified: new Date(),
+            priority: 0.9,
+        },
     ];
 }
