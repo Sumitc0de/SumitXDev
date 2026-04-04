@@ -14,6 +14,17 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
     {
+        id: "snap-prompt",
+        title: "Snap Prompt",
+        description:
+            "A high-performance AI prompt management platform for creators, allowing users to save, organize, and optimize their AI workflows.",
+        tech: ["Next.js", "MongoDB", "Tailwind CSS", "AI"],
+        liveUrl: "https://snap-prompt.vercel.app/",
+        githubUrl: "https://github.com/Sumitc0de/snap-prompt",
+        status: "Live",
+        category: "Web+AI",
+    },
+    {
         id: "ai-portfolio",
         title: "Portfolio — SumitXDev",
         description:

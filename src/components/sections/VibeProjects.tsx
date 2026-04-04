@@ -46,12 +46,12 @@ export default function VibeProjects() {
               itemListElement: [
                 {
                   "@type": "SoftwareApplication",
-                  name: "Quantum Cursor",
+                  name: "Snap Prompt",
                   description:
-                    "A futuristic cursor system with particle physics and magnetic hover.",
+                    "A high-performance AI prompt management platform for creators to save and organize AI workflows.",
                   applicationCategory: "WebApplication",
                   operatingSystem: "Web",
-                  url: "https://example.com",
+                  url: "https://snap-prompt.vercel.app/",
                   author: {
                     "@type": "Person",
                     name: "Sumit Vishwakarma",
@@ -59,25 +59,12 @@ export default function VibeProjects() {
                 },
                 {
                   "@type": "SoftwareApplication",
-                  name: "AI Prompt Playground",
+                  name: "CampusKart",
                   description:
-                    "Interactive prompt experimentation UI built for fun and learning.",
+                    "CampusKart is an exclusive, safe, and dynamic university-based student marketplace.",
                   applicationCategory: "WebApplication",
                   operatingSystem: "Web",
-                  url: "https://example.com",
-                  author: {
-                    "@type": "Person",
-                    name: "Sumit Vishwakarma",
-                  },
-                },
-                {
-                  "@type": "SoftwareApplication",
-                  name: "Skill OS UI",
-                  description:
-                    "An OS-style skill visualization interface with animations and interactions.",
-                  applicationCategory: "WebApplication",
-                  operatingSystem: "Web",
-                  url: "https://example.com",
+                  url: "https://campuskart-ten.vercel.app/",
                   author: {
                     "@type": "Person",
                     name: "Sumit Vishwakarma",
@@ -89,31 +76,22 @@ export default function VibeProjects() {
         />
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <ProjectCard
-            title="Quantum Cursor"
-            description="A futuristic cursor system with particle physics and magnetic hover."
-            tech={["Canvas", "JavaScript", "UX"]}
-            liveUrl="https://example.com"
-            githubUrl="https://github.com/yourname/quantum-cursor"
+            title="Snap Prompt"
+            description="High-performance AI prompt management platform for creators."
+            tech={["Next.js", "MongoDB", "AI"]}
+            liveUrl="https://snap-prompt.vercel.app/"
+            githubUrl="https://github.com/Sumitc0de/snap-prompt"
             vibe
           />
 
           <ProjectCard
-            title="AI Prompt Playground"
-            description="Interactive prompt experimentation UI built for fun and learning."
-            tech={["React", "AI", "UI"]}
-            liveUrl="https://example.com"
-            githubUrl="https://github.com/yourname/prompt-playground"
-            vibe
-          />
-
-          <ProjectCard
-            title="Skill OS UI"
-            description="An OS-style skill visualization interface with animations and interactions."
-            tech={["Next.js", "Framer Motion", "Design"]}
-            liveUrl="https://example.com"
-            githubUrl="https://github.com/yourname/skill-os"
+            title="CampusKart"
+            description="Exclusive, safe, and dynamic university-based student marketplace."
+            tech={["React", "Node.js", "MongoDB"]}
+            liveUrl="https://campuskart-ten.vercel.app/"
+            githubUrl="https://github.com/Sumitc0de/campuskart"
             vibe
           />
         </div>

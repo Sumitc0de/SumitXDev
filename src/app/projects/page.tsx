@@ -41,6 +41,7 @@ export default function ProjectsPage() {
                                 tech={project.tech}
                                 liveUrl={project.liveUrl}
                                 githubUrl={project.githubUrl}
+                                vibe
                             />
                         ))}
                     </div>
