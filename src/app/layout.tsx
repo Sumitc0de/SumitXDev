@@ -71,6 +71,11 @@ export const metadata: Metadata = {
       "FullStack Developer | Frontend Developer | React | Next.js | AI | SaaS Projects",
     images: ["/og.png"],
   },
+  icons: {
+    icon: "/sumit-favicon.png",
+    shortcut: "/sumit-favicon.png",
+    apple: "/sumit-favicon.png",
+  },
 };
 
 export default function RootLayout({
