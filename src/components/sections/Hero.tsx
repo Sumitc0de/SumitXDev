@@ -26,7 +26,7 @@ export default function Hero() {
 
             <div className="relative">
               <div
-                className="absolute -inset-3 rounded-2xl bg-gradient-to-br from-cyan-400/30 via-blue-500/20 to-purple-500/30 blur-xl"
+                className="absolute -inset-3 rounded-2xl bg-linear-to-br from-cyan-400/30 via-blue-500/20 to-purple-500/30 blur-xl"
                 aria-hidden="true"
               />
 
@@ -43,13 +43,14 @@ export default function Hero() {
   backdrop-blur
 ">
                 <Image
-                  src="/sumit.png"
+                  src="/sumit2.png"
                   alt="Portrait of Sumit Vishwakarma, Frontend Developer and AI Engineer"
                   fill
-                  sizes="(max-width: 640px) 200px,
-           (max-width: 768px) 230px,
-           (max-width: 1024px) 260px,
-           300px"
+                  quality={100}
+                  sizes="(max-width: 640px) 400px,
+           (max-width: 768px) 460px,
+           (max-width: 1024px) 520px,
+           600px"
                   className="object-cover"
                   priority
                 />
