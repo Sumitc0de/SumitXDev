@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import QuantumCursor from "@/components/ui/QuantumCursor";
+import SocialDock from "@/components/sections/SocialDock";
 import type { Metadata } from "next";
 
 
@@ -88,9 +89,8 @@ export default function RootLayout({
       <body className="bg-[#020617] min-h-screen  text-white antialiased">
         <QuantumCursor />
         <Header />
-        <div>{children}
-          
-        </div>
+        <div>{children}</div>
+        <SocialDock />
         <Footer />
       </body>
     </html>

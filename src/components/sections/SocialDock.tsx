@@ -6,6 +6,7 @@ import {
   FaXTwitter,
   FaInstagram,
   FaEnvelope,
+  FaWhatsapp,
 } from "react-icons/fa6";
 
 const socials = [
@@ -39,6 +40,12 @@ const socials = [
     icon: FaEnvelope,
     hover: "hover:border-green-400 group-hover:text-green-400",
   },
+  {
+    href: "https://wa.me/919021296376",
+    label: "WhatsApp Sumit Vishwakarma",
+    icon: FaWhatsapp,
+    hover: "hover:border-green-500 group-hover:text-green-500",
+  },
 ];
 
 export default function SocialDock() {
@@ -67,7 +74,7 @@ export default function SocialDock() {
             group flex h-10 w-10 items-center justify-center rounded-full
             border border-white/10 bg-black/40 backdrop-blur
             transition hover:scale-110 ${hover}
-            focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400
+            focus-visible:outline-2 focus-visible:outline-cyan-400
           `}
         >
           <Icon aria-hidden="true" className="text-gray-400 transition" />

@@ -2,7 +2,6 @@ import Hero from "@/components/sections/Hero";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import VibeProjects from "@/components/sections/VibeProjects";
 import CTA from "@/components/sections/CTA";
-import SocialDock from "@/components/sections/SocialDock";
 
 export default function HomePage() {
   const siteUrl =
@@ -69,7 +68,6 @@ export default function HomePage() {
       <FeaturedProjects />
       <VibeProjects />
       <CTA />
-      <SocialDock />
     </main>
   );
 }
