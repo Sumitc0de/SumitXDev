@@ -46,7 +46,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl px-6">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold">
             Initiate{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
               Contact
             </span>{" "}
             Protocol
@@ -237,7 +237,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={pending}
-                className="w-full rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-[1.03] disabled:opacity-60"
+                className="w-full rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-6 py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-[1.03] disabled:opacity-60"
               >
                 {pending ? "Transmitting..." : "Transmit Request"}
               </button>

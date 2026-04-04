@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const navItems = ["Home", "Skills", "Projects", "About", "Contact"];
+const navItems = ["Home", "Skills", "Projects", "About", "Services", "Contact"];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function Header() {
           href="/"
           className="group inline-flex items-center rounded-xl border border-white/10 bg-white/5 px-3 py-1 text-lg font-bold backdrop-blur transition hover:border-cyan-400"
         >
-          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             SumitX
           </span>
           <span className="ml-1 text-white">Dev</span>
@@ -51,7 +51,7 @@ export default function Header() {
 
                 {/* Active underline */}
                 {active && (
-                  <span className="absolute -bottom-2 left-1/2 h-[2px] w-6 -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 shadow-md shadow-cyan-500/40" />
+                  <span className="absolute -bottom-2 left-1/2 h-[2px] w-6 -translate-x-1/2 rounded-full bg-linear-to-r from-cyan-400 to-purple-500 shadow-md shadow-cyan-500/40" />
                 )}
               </Link>
             );
@@ -61,7 +61,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <Link
           href="/contact"
-          className="hidden md:inline-block rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-4 py-2 text-sm font-semibold text-black shadow-md shadow-cyan-500/30 transition hover:scale-105"
+          className="hidden md:inline-block rounded-lg bg-linear-to-r from-cyan-400 to-blue-500 px-4 py-2 text-sm font-semibold text-black shadow-md shadow-cyan-500/30 transition hover:scale-105"
         >
           Hire Me
         </Link>
@@ -73,19 +73,16 @@ export default function Header() {
           aria-label="Toggle Menu"
         >
           <span
-            className={`h-0.5 w-6 bg-white transition ${
-              open ? "translate-y-2 rotate-45" : ""
-            }`}
+            className={`h-0.5 w-6 bg-white transition ${open ? "translate-y-2 rotate-45" : ""
+              }`}
           />
           <span
-            className={`h-0.5 w-6 bg-white transition ${
-              open ? "opacity-0" : ""
-            }`}
+            className={`h-0.5 w-6 bg-white transition ${open ? "opacity-0" : ""
+              }`}
           />
           <span
-            className={`h-0.5 w-6 bg-white transition ${
-              open ? "-translate-y-2 -rotate-45" : ""
-            }`}
+            className={`h-0.5 w-6 bg-white transition ${open ? "-translate-y-2 -rotate-45" : ""
+              }`}
           />
         </button>
       </div>
@@ -120,7 +117,7 @@ export default function Header() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-4 rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 text-center font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
+              className="mt-4 rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-6 py-3 text-center font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
             >
               Hire Me
             </Link>

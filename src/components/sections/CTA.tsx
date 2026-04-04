@@ -19,7 +19,7 @@ export default function CTA() {
           className="text-3xl md:text-5xl font-extrabold leading-tight"
         >
           Hire a{" "}
-          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
             FullStack & AI Developer
           </span>{" "}
           to Build Scalable Solutions
@@ -38,7 +38,7 @@ export default function CTA() {
           <Link
             href="/contact"
             aria-label="Start a project with Sumit Vishwakarma"
-            className="rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400"
+            className="rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-8 py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400"
           >
             Start a Project
           </Link>

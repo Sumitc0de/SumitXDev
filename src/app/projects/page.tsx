@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 
                 <div className="mx-auto max-w-6xl px-6">
                     <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
-                        <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                             Projects
                         </span>{" "}
                         & Case Studies
@@ -53,7 +53,7 @@ export default function ProjectsPage() {
             <section className="px-6 py-20 sm:py-24 md:py-28 text-center">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight">
                     Want to Build Something{" "}
-                    <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                    <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                         Similar?
                     </span>
                 </h2>
@@ -65,7 +65,7 @@ export default function ProjectsPage() {
                 <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                     <Link
                         href="/contact"
-                        className="w-full sm:w-auto rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-6 sm:px-8 py-3 sm:py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
+                        className="w-full sm:w-auto rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-6 sm:px-8 py-3 sm:py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
                     >
                         Start a Project
                     </Link>

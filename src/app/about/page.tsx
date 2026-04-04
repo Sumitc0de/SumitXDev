@@ -17,7 +17,7 @@ export default function AboutPage() {
                 <div className="mx-auto max-w-6xl px-6">
                     <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
                         About the{" "}
-                        <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                             System
                         </span>
                     </h1>
@@ -142,7 +142,7 @@ export default function AboutPage() {
 
                         <Link
                             href="/contact"
-                            className="rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-6 py-3 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
+                            className="rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-6 py-3 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
                         >
                             Start a Conversation
                         </Link>

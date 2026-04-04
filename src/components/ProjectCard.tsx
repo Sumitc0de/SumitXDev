@@ -33,8 +33,8 @@ export default function ProjectCard({
         className={`absolute inset-0 -z-10 rounded-2xl opacity-0 blur-xl transition group-hover:opacity-100
         ${
           vibe
-            ? "bg-gradient-to-r from-purple-500/30 to-pink-500/20"
-            : "bg-gradient-to-r from-cyan-500/20 to-blue-500/20"
+            ? "bg-linear-to-r from-purple-500/30 to-pink-500/20"
+            : "bg-linear-to-r from-cyan-500/20 to-blue-500/20"
         }`}
       />
 
@@ -70,7 +70,7 @@ export default function ProjectCard({
             href={liveUrl}
             target="_blank"
             aria-label={`View live demo of ${title}`}
-            className="rounded-lg bg-gradient-to-r from-cyan-400 to-blue-500 px-4 py-2 text-sm font-semibold text-black transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400"
+            className="rounded-lg bg-linear-to-r from-cyan-400 to-blue-500 px-4 py-2 text-sm font-semibold text-black transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400"
           >
             Live
           </Link>

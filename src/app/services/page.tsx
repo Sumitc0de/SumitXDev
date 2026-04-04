@@ -171,7 +171,7 @@ export default function ServicesPage() {
                         </p>
                         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
                             Build Faster.{" "}
-                            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                                 Convert Better.
                             </span>{" "}
                             Grow Smarter.
@@ -186,7 +186,7 @@ export default function ServicesPage() {
                         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link
                                 href="/contact"
-                                className="rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-8 py-3.5 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
+                                className="rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-8 py-3.5 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105"
                             >
                                 Start a Project →
                             </Link>
@@ -209,7 +209,7 @@ export default function ServicesPage() {
                             </p>
                             <h2 className="text-3xl md:text-4xl font-extrabold">
                                 Websites &amp; Web Apps That{" "}
-                                <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                                <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                                     Work for Your Business
                                 </span>
                             </h2>
@@ -249,7 +249,7 @@ export default function ServicesPage() {
                             </p>
                             <h2 className="text-3xl md:text-4xl font-extrabold">
                                 Visuals That{" "}
-                                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                                     Stop the Scroll
                                 </span>
                             </h2>
@@ -285,7 +285,7 @@ export default function ServicesPage() {
                             </p>
                             <h2 className="text-3xl md:text-4xl font-extrabold">
                                 A Process Built for{" "}
-                                <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                                <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                                     Clarity &amp; Speed
                                 </span>
                             </h2>
@@ -323,7 +323,7 @@ export default function ServicesPage() {
                             </p>
                             <h2 className="text-3xl md:text-4xl font-extrabold">
                                 Built Different.{" "}
-                                <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                                <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                                     Delivered Right.
                                 </span>
                             </h2>
@@ -355,7 +355,7 @@ export default function ServicesPage() {
                     <div className="mx-auto max-w-3xl text-center">
                         <h2 className="text-3xl md:text-5xl font-extrabold leading-tight">
                             Ready to Build Something{" "}
-                            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                            <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                                 That Moves the Needle?
                             </span>
                         </h2>
@@ -368,7 +368,7 @@ export default function ServicesPage() {
                         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Link
                                 href="/contact"
-                                className="rounded-xl bg-gradient-to-r from-cyan-400 to-blue-500 px-10 py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105 text-base"
+                                className="rounded-xl bg-linear-to-r from-cyan-400 to-blue-500 px-10 py-4 font-semibold text-black shadow-lg shadow-cyan-500/30 transition hover:scale-105 text-base"
                             >
                                 Let's Start a Project →
                             </Link>
