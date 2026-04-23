@@ -89,6 +89,25 @@ export const PROJECTS: Project[] = [
         githubUrl: "https://github.com/Sumitc0de/Writeora",
         status: "Live",
         category: "Web",
+    },
+    {
+        id: "vcet-website",
+        title: "VCET Official Website",
+        description: "Developed the official website for Vidyavardhini's College of Engineering & Technology, focusing on academic resources, admission portals, and student engagement.",
+        tech: ["Next.js", "Tailwind CSS", "CMS Integration"],
+        liveUrl: "https://vcet.edu.in/",
+        status: "Live",
+        category: "Web",
+    },
+    {
+        id: "spicekart",
+        title: "SpiceKart",
+        description: "A premium e-commerce marketplace for spices, built with a focus on high-end aesthetics, seamless user experience, and 'vibecoded' design philosophy.",
+        tech: ["Next.js", "Tailwind CSS", "Vibecoded"],
+        liveUrl: "https://spicekart-six.vercel.app/",
+        githubUrl: "https://github.com/Sumitc0de/new_project_01",
+        status: "Live",
+        category: "Web",
     }
 ];
 

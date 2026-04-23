@@ -70,6 +70,19 @@ export default function VibeProjects() {
                     name: "Sumit Vishwakarma",
                   },
                 },
+                {
+                  "@type": "SoftwareApplication",
+                  name: "SpiceKart",
+                  description:
+                    "A premium e-commerce marketplace for spices, built with a focus on high-end aesthetics.",
+                  applicationCategory: "WebApplication",
+                  operatingSystem: "Web",
+                  url: "https://spicekart-six.vercel.app/",
+                  author: {
+                    "@type": "Person",
+                    name: "Sumit Vishwakarma",
+                  },
+                },
               ],
             }),
           }}
@@ -92,6 +105,15 @@ export default function VibeProjects() {
             tech={["React", "Node.js", "MongoDB"]}
             liveUrl="https://campuskart-ten.vercel.app/"
             githubUrl="https://github.com/Sumitc0de/campuskart"
+            vibe
+          />
+
+          <ProjectCard
+            title="SpiceKart"
+            description="A premium e-commerce marketplace for spices, built with a focus on high-end aesthetics."
+            tech={["Next.js", "Tailwind CSS", "Vibecoded"]}
+            liveUrl="https://spicekart-six.vercel.app/"
+            githubUrl="https://github.com/Sumitc0de/new_project_01"
             vibe
           />
         </div>
