@@ -55,10 +55,10 @@ export default function SocialDock() {
       className="
         fixed z-40
         bottom-4 left-1/2 -translate-x-1/2
-        flex flex-row gap-4
-        rounded-full border border-white/10 bg-black/50 px-4 py-2 backdrop-blur
+        flex flex-row gap-8
+        rounded-full border border-white/10 bg-black/50 px-8 py-3 backdrop-blur
         md:left-6 md:top-1/2 md:-translate-y-1/2 md:translate-x-0
-        md:flex md:flex-col md:rounded-2xl md:px-2 md:py-4
+        md:flex md:flex-col md:gap-4 md:rounded-2xl md:px-2 md:py-4
       "
 
     >
