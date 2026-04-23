@@ -1,27 +1,43 @@
 import { MetadataRoute } from "next";
+import { BLOG_POSTS } from "@/data/blogs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
+    const baseUrl = "https://sumit-x-dev.vercel.app";
+
+    const staticRoutes: MetadataRoute.Sitemap = [
         {
-            url: "https://sumit-x-dev.vercel.app",
+            url: baseUrl,
             lastModified: new Date(),
         },
         {
-            url: "https://sumit-x-dev.vercel.app/projects",
+            url: `${baseUrl}/projects`,
             lastModified: new Date(),
         },
         {
-            url: "https://sumit-x-dev.vercel.app/skills",
+            url: `${baseUrl}/skills`,
             lastModified: new Date(),
         },
         {
-            url: "https://sumit-x-dev.vercel.app/contact",
+            url: `${baseUrl}/contact`,
             lastModified: new Date(),
         },
         {
-            url: "https://sumit-x-dev.vercel.app/services",
+            url: `${baseUrl}/services`,
+            lastModified: new Date(),
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/blog`,
             lastModified: new Date(),
             priority: 0.9,
         },
     ];
+
+    const blogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.date),
+        priority: 0.8,
+    }));
+
+    return [...staticRoutes, ...blogRoutes];
 }
