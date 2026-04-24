@@ -16,9 +16,7 @@ type ShareButtonsProps = {
 export default function ShareButtons({ title, slug }: ShareButtonsProps) {
     const [copied, setCopied] = useState(false);
 
-    const siteUrl = typeof window !== "undefined"
-        ? window.location.origin
-        : process.env.NEXT_PUBLIC_SITE_URL || "https://sumit-x-dev.vercel.app";
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.sumitxdev.online";
 
     const url = `${siteUrl}/blog/${slug}`;
     const encodedUrl = encodeURIComponent(url);

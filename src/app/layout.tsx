@@ -23,8 +23,9 @@ const personStructuredData = {
   },
   "sameAs": [
     "https://github.com/Sumitc0de",
-    "https://www.linkedin.com/in/sumit-vishwakarma-54a7b7264/",
-    "https://twitter.com/aihackwithsumit"
+    "https://www.linkedin.com/in/sumit-vishwakarma-b818b7268/",
+    "https://x.com/DeveloperrSumit",
+    "https://www.instagram.com/aihackwithsumit"
   ]
 };
 

@@ -158,4 +158,8 @@ export const QUICK_ACTIONS = [
     label: "🛠️ Services I Offer",
     prompt: "What services does Sumit offer? What kind of work can I hire him for?",
   },
+  {
+    label: "📚 Resources Vault",
+    prompt: "Tell me about the developer resources in the CodeMinded Vault.",
+  },
 ] as const;

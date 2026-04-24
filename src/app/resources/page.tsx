@@ -17,7 +17,7 @@ export default function ResourcesPage() {
   const handleCategoryChange = (category: ResourceCategory) => {
     setActiveCategory(category);
     setIsAiResult(false);
-    
+
     if (category === "All") {
       setDisplayedResources(RESOURCES);
     } else {
@@ -38,7 +38,7 @@ export default function ResourcesPage() {
       });
 
       const data = await res.json();
-      
+
       if (data.results) {
         setDisplayedResources(data.results);
       }
@@ -46,8 +46,8 @@ export default function ResourcesPage() {
       console.error("Search failed:", error);
       // Fallback: simple text search if API fails
       setDisplayedResources(
-        RESOURCES.filter(r => 
-          r.title.toLowerCase().includes(query.toLowerCase()) || 
+        RESOURCES.filter(r =>
+          r.title.toLowerCase().includes(query.toLowerCase()) ||
           r.description.toLowerCase().includes(query.toLowerCase())
         )
       );
@@ -59,13 +59,13 @@ export default function ResourcesPage() {
   return (
     <main className="min-h-screen bg-[#020617] pt-24 pb-20 selection:bg-cyan-500/30">
       <ResourceHeader onSearch={handleSearch} isSearching={isSearching} />
-      
+
       <TrendingSection />
 
       <div id="resource-grid" className="scroll-mt-32">
-        <ResourceGrid 
-          resources={displayedResources} 
-          activeCategory={activeCategory} 
+        <ResourceGrid
+          resources={displayedResources}
+          activeCategory={activeCategory}
           onCategoryChange={handleCategoryChange}
           isAiResult={isAiResult}
         />
@@ -73,10 +73,7 @@ export default function ResourcesPage() {
 
       <AIRecommendations />
 
-      {/* Footer text specific to resources */}
-      <div className="w-full text-center py-12 text-sm text-gray-500 border-t border-white/5 mt-12">
-        Powered by Groq AI ⚡ | Made by aihackwithsumit 🚀
-      </div>
+
     </main>
   );
 }
