@@ -124,10 +124,10 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preload" as="image" href="/hero-image.webp" fetchPriority="high" />
-      </head>
-      <body className="bg-[#020617] min-h-screen text-white antialiased">
         <JsonLd data={personStructuredData} />
         <JsonLd data={websiteStructuredData} />
+      </head>
+      <body className="bg-[#020617] min-h-screen text-white antialiased">
         <AntiGravityLoader>
           <QuantumCursor />
           <Header />

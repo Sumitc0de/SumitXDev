@@ -60,7 +60,7 @@ export default function ResourceGrid({ resources, activeCategory, onCategoryChan
             className="group relative flex flex-col justify-between bg-[#0B1120] border border-white/10 rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden"
           >
             {/* Hover Glow */}
-            <div className="absolute -inset-full bg-gradient-to-r from-cyan-500/10 to-purple-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute -inset-full bg-linear-to-r from-cyan-500/10 to-purple-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             <div className="relative z-10">
               <div className="flex items-center justify-between mb-4">

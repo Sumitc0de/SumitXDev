@@ -32,7 +32,7 @@ export default function ResourceHeader({ onSearch, isSearching }: ResourceHeader
         transition={{ duration: 0.6, delay: 0.1 }}
         className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6"
       >
-        CodeMinded <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Vault 🚀</span>
+        CodeMinded <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Vault 🚀</span>
       </motion.h1>
 
       <motion.p
@@ -52,7 +52,7 @@ export default function ResourceHeader({ onSearch, isSearching }: ResourceHeader
         onSubmit={handleSearch}
         className="relative w-full max-w-2xl group"
       >
-        <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+        <div className="absolute -inset-1 bg-linear-to-r from-cyan-400 to-purple-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
         <div className="relative flex items-center bg-[#0f172a] rounded-xl p-2 border border-white/10 shadow-2xl">
           <div className="pl-4 pr-2 text-cyan-400">
             {isSearching ? (
@@ -71,7 +71,7 @@ export default function ResourceHeader({ onSearch, isSearching }: ResourceHeader
           <button
             type="submit"
             disabled={isSearching || !query.trim()}
-            className="hidden md:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg text-white font-semibold shadow-lg hover:scale-105 transition disabled:opacity-50 disabled:hover:scale-100"
+            className="hidden md:flex items-center gap-2 px-6 py-3 bg-linear-to-r from-cyan-500 to-blue-600 rounded-lg text-white font-semibold shadow-lg hover:scale-105 transition disabled:opacity-50 disabled:hover:scale-100"
           >
             <Sparkles size={18} />
             Search
