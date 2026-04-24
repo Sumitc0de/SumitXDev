@@ -24,15 +24,7 @@ export default function ResourceHeader({ onSearch, isSearching }: ResourceHeader
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-64 bg-cyan-500/20 blur-[120px] rounded-full pointer-events-none" />
 
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-medium mb-6"
-      >
-        <Sparkles size={16} />
-        <span>Powered by Groq AI</span>
-      </motion.div>
+
 
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
