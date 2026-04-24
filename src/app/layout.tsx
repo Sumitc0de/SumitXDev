@@ -5,6 +5,8 @@ import Footer from "@/components/layout/Footer";
 import QuantumCursor from "@/components/ui/QuantumCursor";
 import SocialDock from "@/components/sections/SocialDock";
 import type { Metadata } from "next";
+import AntiGravityLoader from "@/components/ui/AntiGravityLoader";
+import SumitAIAssistant from "@/components/chatbot/SumitAIAssistant";
 
 
 export const metadata: Metadata = {
@@ -87,11 +89,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#020617] min-h-screen  text-white antialiased">
-        <QuantumCursor />
-        <Header />
-        <div>{children}</div>
-        <SocialDock />
-        <Footer />
+        <AntiGravityLoader>
+          <QuantumCursor />
+          <Header />
+          <div>{children}</div>
+          <SocialDock />
+          <Footer />
+          <SumitAIAssistant />
+        </AntiGravityLoader>
       </body>
     </html>
   );

@@ -41,7 +41,7 @@ export default function BlogPage() {
                     </span>
 
                     <h1 className="mt-4 text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
-                        <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                             Blog
                         </span>{" "}
                         & Insights

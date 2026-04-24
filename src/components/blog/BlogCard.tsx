@@ -30,12 +30,12 @@ export default function BlogCard({
             {/* Decorative glow */}
             <div
                 aria-hidden="true"
-                className="absolute inset-0 -z-10 rounded-2xl opacity-0 blur-xl transition group-hover:opacity-100 bg-gradient-to-r from-cyan-500/20 to-purple-500/20"
+                className="absolute inset-0 -z-10 rounded-2xl opacity-0 blur-xl transition group-hover:opacity-100 bg-linear-to-r from-cyan-500/20 to-purple-500/20"
             />
 
             {/* Thumbnail */}
-            <div className="relative h-48 w-full overflow-hidden bg-gradient-to-br from-cyan-500/10 to-purple-500/10">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-transparent to-transparent z-10" />
+            <div className="relative h-48 w-full overflow-hidden bg-linear-to-br from-cyan-500/10 to-purple-500/10">
+                <div className="absolute inset-0 bg-linear-to-t from-[#020617] via-transparent to-transparent z-10" />
                 <div
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                     style={{

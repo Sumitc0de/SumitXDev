@@ -65,7 +65,7 @@ export default function BlogSearch({ posts }: BlogSearchProps) {
                         className={`rounded-full px-4 py-1.5 text-xs font-medium transition-all duration-200
                             ${
                                 !activeTag
-                                    ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-black shadow-md shadow-cyan-500/20"
+                                    ? "bg-linear-to-r from-cyan-400 to-blue-500 text-black shadow-md shadow-cyan-500/20"
                                     : "border border-white/10 bg-white/5 text-gray-400 hover:border-cyan-400/30 hover:text-cyan-400"
                             }`}
                     >
@@ -80,7 +80,7 @@ export default function BlogSearch({ posts }: BlogSearchProps) {
                             className={`rounded-full px-4 py-1.5 text-xs font-medium transition-all duration-200
                                 ${
                                     activeTag === tag
-                                        ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-black shadow-md shadow-cyan-500/20"
+                                        ? "bg-linear-to-r from-cyan-400 to-blue-500 text-black shadow-md shadow-cyan-500/20"
                                         : "border border-white/10 bg-white/5 text-gray-400 hover:border-cyan-400/30 hover:text-cyan-400"
                                 }`}
                         >

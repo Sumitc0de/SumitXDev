@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
     {
         id: "challenger-classes",
         title: "Challenger Classes Platform",
-        description: "A modern and responsive website for Challenger Classes, designed to showcase courses, faculty, achievements, and provide a seamless experience for students and parents.",
+        description: "A real client project — built a modern, responsive website for Challenger Classes (a coaching institute), designed to showcase courses, faculty, achievements, and provide a seamless experience for students and parents.",
         tech: ["Next.js", "React", "Tailwind CSS"],
         liveUrl: "https://challengerclasses-wheat.vercel.app/",
         githubUrl: "https://github.com/Sumitc0de/challenger-classes-web-app",
@@ -93,9 +93,17 @@ export const PROJECTS: Project[] = [
     {
         id: "vcet-website",
         title: "VCET Official Website",
-        description: "Developed the official website for Vidyavardhini's College of Engineering & Technology, focusing on academic resources, admission portals, and student engagement.",
+        description: "A real client project — developed the official website for Vidyavardhini's College of Engineering & Technology (vcet.edu.in), a live institutional site used by thousands of students, faculty, and visitors. Focused on academic resources, admission portals, and student engagement.",
         tech: ["Next.js", "Tailwind CSS", "CMS Integration"],
         liveUrl: "https://vcet.edu.in/",
+        status: "Live",
+        category: "Web",
+    },
+    {
+        id: "vcet-admin-dashboard",
+        title: "VCET Admin Dashboard",
+        description: "A real client project — built an admin dashboard for VCET's college website, enabling faculty and administrators to manage content, announcements, academic data, and student resources through a centralized control panel.",
+        tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "MongoDB"],
         status: "Live",
         category: "Web",
     },

@@ -224,7 +224,7 @@ export default function ServicesPage() {
                             {webServices.map((s) => (
                                 <div
                                     key={s.title}
-                                    className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-[#0b1220] via-[#0e1628] to-[#101a2e] p-7 transition hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10 group"
+                                    className="relative rounded-2xl border border-white/10 bg-linear-to-br from-[#0b1220] via-[#0e1628] to-[#101a2e] p-7 transition hover:border-cyan-500/40 hover:shadow-lg hover:shadow-cyan-500/10 group"
                                 >
                                     <div className="absolute inset-0 -z-10 rounded-2xl bg-[radial-gradient(circle_at_30%_20%,rgba(34,211,238,0.06),transparent_60%)] group-hover:opacity-150 transition" />
                                     <span className="text-3xl mb-4 block">{s.icon}</span>
@@ -264,7 +264,7 @@ export default function ServicesPage() {
                             {aiCreativeServices.map((s) => (
                                 <div
                                     key={s.title}
-                                    className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-[#130b22] via-[#160d28] to-[#1a0f30] p-7 transition hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
+                                    className="relative rounded-2xl border border-white/10 bg-linear-to-br from-[#130b22] via-[#160d28] to-[#1a0f30] p-7 transition hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10 group"
                                 >
                                     <div className="absolute inset-0 -z-10 rounded-2xl bg-[radial-gradient(circle_at_30%_20%,rgba(168,85,247,0.07),transparent_60%)] group-hover:opacity-150 transition" />
                                     <span className="text-3xl mb-4 block">{s.icon}</span>

@@ -165,7 +165,7 @@ export default async function BlogDetailPage({ params }: Props) {
                         <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-400">
                             {/* Author */}
                             <div className="flex items-center gap-2">
-                                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-purple-500 text-xs font-bold text-black">
+                                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-linear-to-br from-cyan-400 to-purple-500 text-xs font-bold text-black">
                                     SV
                                 </div>
                                 <span>{post.author}</span>
