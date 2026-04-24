@@ -83,7 +83,7 @@ export const PROJECTS: Project[] = [
     {
         id: "writeora",
         title: "Writeora",
-        description: "A modern writing platform designed to provide a seamless creating and reading experience.",
+        description: "A modern React & Next.js writing platform designed to provide a seamless creating and reading experience. Features optimized SEO architecture and dynamic server-side rendering.",
         tech: ["React", "Next.js", "Tailwind CSS"],
         liveUrl: "https://writeora-v1.vercel.app/",
         githubUrl: "https://github.com/Sumitc0de/Writeora",
@@ -93,7 +93,7 @@ export const PROJECTS: Project[] = [
     {
         id: "vcet-website",
         title: "VCET Official Website",
-        description: "A real client project — developed the official website for Vidyavardhini's College of Engineering & Technology (vcet.edu.in), a live institutional site used by thousands of students, faculty, and visitors. Focused on academic resources, admission portals, and student engagement.",
+        description: "A real client project — developed the official website for Vidyavardhini's College of Engineering & Technology (vcet.edu.in). A high-performance, mobile-first institutional site serving thousands of students via a custom CMS integration.",
         tech: ["Next.js", "Tailwind CSS", "CMS Integration"],
         liveUrl: "https://vcet.edu.in/",
         status: "Live",
@@ -102,7 +102,7 @@ export const PROJECTS: Project[] = [
     {
         id: "vcet-admin-dashboard",
         title: "VCET Admin Dashboard",
-        description: "A real client project — built an admin dashboard for VCET's college website, enabling faculty and administrators to manage content, announcements, academic data, and student resources through a centralized control panel.",
+        description: "A real client project — built a secure full-stack Node.js and Next.js admin dashboard for VCET's college website. Enables seamless academic data management with MongoDB and scalable REST APIs.",
         tech: ["Next.js", "React", "Tailwind CSS", "Node.js", "MongoDB"],
         status: "Live",
         category: "Web",
@@ -110,7 +110,7 @@ export const PROJECTS: Project[] = [
     {
         id: "spicekart",
         title: "SpiceKart",
-        description: "A premium e-commerce marketplace for spices, built with a focus on high-end aesthetics, seamless user experience, and 'vibecoded' design philosophy.",
+        description: "A premium MERN stack e-commerce marketplace for spices. Built with high-end frontend architecture, Next.js optimization, and a conversion-focused 'vibecoded' UI/UX design.",
         tech: ["Next.js", "Tailwind CSS", "Vibecoded"],
         liveUrl: "https://spicekart-six.vercel.app/",
         githubUrl: "https://github.com/Sumitc0de/new_project_01",

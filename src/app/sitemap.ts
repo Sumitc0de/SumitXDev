@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/data/blogs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://sumit-x-dev.vercel.app";
+    const baseUrl = "https://www.sumitxdev.online";
 
     const staticRoutes: MetadataRoute.Sitemap = [
         {
@@ -30,6 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/blog`,
             lastModified: new Date(),
             priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/resources`,
+            lastModified: new Date(),
+            priority: 0.8,
         },
     ];
 

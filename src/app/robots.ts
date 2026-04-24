@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://sumit-x-dev.vercel.app/sitemap.xml",
+    sitemap: "https://www.sumitxdev.online/sitemap.xml",
   };
 }

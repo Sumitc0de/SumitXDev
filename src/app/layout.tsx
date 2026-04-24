@@ -7,27 +7,57 @@ import SocialDock from "@/components/sections/SocialDock";
 import type { Metadata } from "next";
 import AntiGravityLoader from "@/components/ui/AntiGravityLoader";
 import SumitAIAssistant from "@/components/chatbot/SumitAIAssistant";
+import JsonLd from "@/components/seo/JsonLd";
 
+// Semantic SEO - JSON-LD Structured Data
+const personStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sumit Vishwakarma",
+  "url": "https://www.sumitxdev.online",
+  "image": "https://www.sumitxdev.online/og.png",
+  "jobTitle": "Full-Stack Developer & AI Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "SumitXDev"
+  },
+  "sameAs": [
+    "https://github.com/Sumitc0de",
+    "https://www.linkedin.com/in/sumit-vishwakarma-54a7b7264/",
+    "https://twitter.com/aihackwithsumit"
+  ]
+};
 
+const websiteStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SumitXDev | Sumit Vishwakarma",
+  "url": "https://www.sumitxdev.online",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.sumitxdev.online/resources?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
 export const metadata: Metadata = {
   verification: {
     google: "p0K0c4tPfxdE1WExZ54l6Q8pabblz8R5GDmdePkDm0U",
   },
   title: {
-    default: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
+    default: "Sumit Vishwakarma | Advanced Full-Stack & AI Developer (2026)",
     template: "%s | Sumit Vishwakarma",
   },
   description:
-    "Sumit Vishwakarma is a FullStack Developer & AI Engineer building high-performance, SEO-optimized web applications using React, Next.js, and modern AI tools.",
+    "Hire Sumit Vishwakarma, an expert Full-Stack Developer & AI Engineer. I build modern, high-performance, SEO-optimized web apps using React, Next.js, and AI.",
   keywords: [
     "Sumit Vishwakarma",
-    "Frontend Developer",
-    "React Developer",
-    "Next.js Developer",
-    "AI Engineer",
+    "AI Developer Portfolio",
+    "React Developer Portfolio",
     "Web Developer India",
-    "Portfolio",
-    "FullStack Developer"
+    "Next.js Developer",
+    "FullStack Developer",
+    "Software Engineer",
+    "Freelance Web Developer"
   ],
   authors: [{ name: "Sumit Vishwakarma" }],
   creator: "Sumit Vishwakarma",
@@ -51,10 +81,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Sumit Vishwakarma | FullStack Developer & AI Engineer",
+    title: "Sumit Vishwakarma | Advanced Full-Stack & AI Developer",
     description:
-      "Explore projects, case studies, and AI-powered web apps built by Sumit Vishwakarma using React and Next.js.",
-    url: "/",
+      "Explore modern projects, AI-powered web apps, and case studies built by Sumit Vishwakarma using Next.js and React.",
+    url: "https://www.sumitxdev.online/",
     siteName: "SumitXDev",
     images: [
       {
@@ -69,9 +99,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Sumit Vishwakarma | Developer Portfolio",
+    title: "Sumit Vishwakarma | Advanced Developer Portfolio",
     description:
-      "FullStack Developer | Frontend Developer | React | Next.js | AI | SaaS Projects",
+      "Full-Stack Developer | AI Integration | React | Next.js | High-Performance SaaS Projects",
     images: ["/og.png"],
   },
   icons: {
@@ -88,7 +118,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#020617] min-h-screen  text-white antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="preload" as="image" href="/hero-image.webp" fetchPriority="high" />
+      </head>
+      <body className="bg-[#020617] min-h-screen text-white antialiased">
+        <JsonLd data={personStructuredData} />
+        <JsonLd data={websiteStructuredData} />
         <AntiGravityLoader>
           <QuantumCursor />
           <Header />
