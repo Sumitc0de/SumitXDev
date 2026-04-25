@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const navItems = ["Home", "Skills", "Projects", "Resources", "About", "Services", "Blog", "Contact"];
+const navItems = ["Home", "About", "Skills", "Projects", "Resources", "Services", "Blog", "Contact"];
 
 export default function Header() {
   const [open, setOpen] = useState(false);

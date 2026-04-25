@@ -1,79 +1,24 @@
-"use client";
+import { Suspense } from "react";
+import { RESOURCES } from "@/data/resources";
+import { generateResourcesListMetadata, generateResourcesListJsonLd } from "@/lib/seo";
+import JsonLd from "@/components/seo/JsonLd";
+import ResourcesPageClient from "@/components/resources/ResourcesPageClient";
 
-import { useState } from "react";
-import ResourceHeader from "@/components/resources/ResourceHeader";
-import ResourceGrid from "@/components/resources/ResourceGrid";
-import AIRecommendations from "@/components/resources/AIRecommendations";
-import TrendingSection from "@/components/resources/TrendingSection";
-import { RESOURCES, Resource, ResourceCategory } from "@/data/resources";
+export const metadata = generateResourcesListMetadata();
 
 export default function ResourcesPage() {
-  const [activeCategory, setActiveCategory] = useState<ResourceCategory>("All");
-  const [displayedResources, setDisplayedResources] = useState<(Resource & { aiDescription?: string })[]>(RESOURCES);
-  const [isSearching, setIsSearching] = useState(false);
-  const [isAiResult, setIsAiResult] = useState(false);
-
-  // Handle traditional category filtering
-  const handleCategoryChange = (category: ResourceCategory) => {
-    setActiveCategory(category);
-    setIsAiResult(false);
-
-    if (category === "All") {
-      setDisplayedResources(RESOURCES);
-    } else {
-      setDisplayedResources(RESOURCES.filter((r) => r.category === category));
-    }
-  };
-
-  // Handle AI Search via Groq API
-  const handleSearch = async (query: string) => {
-    setIsSearching(true);
-    setIsAiResult(true);
-
-    try {
-      const res = await fetch("/api/resources/search", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query, category: activeCategory }),
-      });
-
-      const data = await res.json();
-
-      if (data.results) {
-        setDisplayedResources(data.results);
-      }
-    } catch (error) {
-      console.error("Search failed:", error);
-      // Fallback: simple text search if API fails
-      setDisplayedResources(
-        RESOURCES.filter(r =>
-          r.title.toLowerCase().includes(query.toLowerCase()) ||
-          r.description.toLowerCase().includes(query.toLowerCase())
-        )
-      );
-    } finally {
-      setIsSearching(false);
-    }
-  };
+  const jsonLd = generateResourcesListJsonLd(RESOURCES);
 
   return (
-    <main className="min-h-screen bg-[#020617] pt-24 pb-20 selection:bg-cyan-500/30">
-      <ResourceHeader onSearch={handleSearch} isSearching={isSearching} />
-
-      <TrendingSection />
-
-      <div id="resource-grid" className="scroll-mt-32">
-        <ResourceGrid
-          resources={displayedResources}
-          activeCategory={activeCategory}
-          onCategoryChange={handleCategoryChange}
-          isAiResult={isAiResult}
-        />
-      </div>
-
-      <AIRecommendations />
-
-
-    </main>
+    <>
+      <JsonLd data={jsonLd} />
+      <Suspense fallback={
+        <div className="min-h-screen bg-[#020617] flex items-center justify-center">
+          <div className="w-10 h-10 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin" />
+        </div>
+      }>
+        <ResourcesPageClient />
+      </Suspense>
+    </>
   );
 }

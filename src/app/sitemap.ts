@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/data/blogs";
+import { RESOURCES } from "@/data/resources";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://www.sumitxdev.online";
@@ -38,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: `${baseUrl}/resources`,
             lastModified: new Date(),
-            priority: 0.8,
+            priority: 0.9,
         },
     ];
 
@@ -48,5 +49,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }));
 
-    return [...staticRoutes, ...blogRoutes];
+    const resourceRoutes: MetadataRoute.Sitemap = RESOURCES.map((resource) => ({
+        url: `${baseUrl}/resources/${resource.slug}`,
+        lastModified: new Date(resource.dateAdded),
+        priority: 0.8,
+    }));
+
+    return [...staticRoutes, ...blogRoutes, ...resourceRoutes];
 }

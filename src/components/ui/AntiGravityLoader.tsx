@@ -13,12 +13,17 @@ export default function AntiGravityLoader({
 
   useEffect(() => {
     setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    
     // Play animation on every mount (page reload)
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 3500);
     return () => clearTimeout(timer);
-  }, []);
+  }, [isMounted]);
 
   const characters = ["<", "S", "X", "D", "/", ">"];
   const premiumEasing: [number, number, number, number] = [0.22, 1, 0.36, 1];

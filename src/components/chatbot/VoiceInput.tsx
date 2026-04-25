@@ -13,6 +13,7 @@ export default function VoiceInput({ onTranscript, disabled }: VoiceInputProps) 
   const [isSupported, setIsSupported] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line
     setIsSupported(
       typeof window !== "undefined" &&
         ("SpeechRecognition" in window || "webkitSpeechRecognition" in window)
