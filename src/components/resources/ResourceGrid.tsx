@@ -154,7 +154,7 @@ export default function ResourceGrid({
                 className="group relative flex flex-col justify-between bg-[#0B1120] border border-white/10 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition-all duration-300"
               >
                 {/* Hover Glow */}
-                <div className="absolute -inset-full bg-gradient-to-r from-cyan-500/10 to-purple-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -inset-full bg-linear-to-r from-cyan-500/10 to-purple-500/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 <div className="relative z-10 p-6 flex flex-col flex-1">
                   {/* Top row: type icon + category + actions */}
@@ -162,7 +162,7 @@ export default function ResourceGrid({
                     <div className="flex items-center gap-3">
                       {/* Type icon */}
                       <div
-                        className={`p-2.5 rounded-xl bg-gradient-to-br ${typeConfig.gradient} border ${typeConfig.borderColor}`}
+                        className={`p-2.5 rounded-xl bg-linear-to-br ${typeConfig.gradient} border ${typeConfig.borderColor}`}
                       >
                         <TypeIcon size={18} className={typeConfig.iconColor} />
                       </div>

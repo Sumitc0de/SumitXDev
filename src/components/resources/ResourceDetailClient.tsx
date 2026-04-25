@@ -91,9 +91,9 @@ export default function ResourceDetailClient({ resource }: Props) {
     <div className="relative min-h-screen bg-[#020617] overflow-hidden flex flex-col pt-24 pb-20">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[100px] mix-blend-screen animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-purple-500/10 rounded-full blur-[120px] mix-blend-screen" />
+        <div className="absolute bottom-1/4 right-1/4 w-120 h-120 bg-purple-500/10 rounded-full blur-[120px] mix-blend-screen" />
 
         {/* Floating particles */}
         <div className="absolute inset-0 opacity-30">
@@ -166,7 +166,7 @@ export default function ResourceDetailClient({ resource }: Props) {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-white via-cyan-100 to-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mb-4">
             {resource.title}
           </h1>
 
@@ -193,10 +193,10 @@ export default function ResourceDetailClient({ resource }: Props) {
         <motion.div
           animate={floatingAnimation}
           whileHover={{ scale: 1.01, y: -5, transition: { duration: 0.3 } }}
-          className="relative w-full max-w-5xl mx-auto aspect-[3/4] sm:aspect-[4/3] md:aspect-video rounded-2xl md:rounded-3xl z-10 group"
+          className="relative w-full max-w-5xl mx-auto aspect-3/4 sm:aspect-4/3 md:aspect-video rounded-2xl md:rounded-3xl z-10 group"
         >
           {/* Glow */}
-          <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/30 via-purple-500/30 to-blue-500/30 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
+          <div className="absolute -inset-4 bg-linear-to-r from-cyan-500/30 via-purple-500/30 to-blue-500/30 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
 
           {/* Glassmorphism Card */}
           <div className="relative w-full h-full rounded-3xl border border-white/20 bg-[#0B1120]/60 backdrop-blur-2xl overflow-hidden shadow-[0_0_50px_rgba(6,182,212,0.15)] flex flex-col">
@@ -239,7 +239,7 @@ export default function ResourceDetailClient({ resource }: Props) {
               )}
 
               {/* Scanline overlay */}
-              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0)_50%,rgba(0,0,0,0.1)_50%)] bg-[length:100%_4px] pointer-events-none opacity-20" />
+              <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0)_50%,rgba(0,0,0,0.1)_50%)] bg-size-[100%_4px] pointer-events-none opacity-20" />
             </div>
           </div>
 
@@ -340,16 +340,16 @@ export default function ResourceDetailClient({ resource }: Props) {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.4, delay: 0.7 + idx * 0.1 }}
-                    className="relative p-6 rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#020617] border border-white/10 hover:border-cyan-500/40 shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 overflow-hidden"
+                    className="relative p-6 rounded-2xl bg-linear-to-br from-[#0f172a] to-[#020617] border border-white/10 hover:border-cyan-500/40 shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 overflow-hidden"
                   >
                     {/* Hover glow */}
-                    <div className="absolute -inset-full bg-gradient-to-r from-cyan-500/5 to-purple-500/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute -inset-full bg-linear-to-r from-cyan-500/5 to-purple-500/5 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     <div className="relative z-10">
                       {/* Type Icon Header */}
                       <div className="flex items-center justify-between mb-4">
                         <div
-                          className={`p-2 rounded-xl bg-gradient-to-br ${TYPE_CONFIG[related.type].gradient} border ${TYPE_CONFIG[related.type].borderColor}`}
+                          className={`p-2 rounded-xl bg-linear-to-br ${TYPE_CONFIG[related.type].gradient} border ${TYPE_CONFIG[related.type].borderColor}`}
                         >
                           {(() => {
                             const Icon = TYPE_CONFIG[related.type].icon;

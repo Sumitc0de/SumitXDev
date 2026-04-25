@@ -63,7 +63,7 @@ export default function ContactPage() {
       <section className="pb-32">
         <div className="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
           {/* LEFT — AI SYSTEM PROFILE */}
-          <div className="relative rounded-2xl border border-white/10 bg-gradient-to-br from-[#0b1220] via-[#0e1628] to-[#101a2e] p-6 sm:p-7 backdrop-blur-xl flex flex-col">
+          <div className="relative rounded-2xl border border-white/10 bg-linear-to-br from-[#0b1220] via-[#0e1628] to-[#101a2e] p-6 sm:p-7 backdrop-blur-xl flex flex-col">
             {/* Ambient glow */}
             <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl bg-[radial-gradient(circle_at_25%_20%,rgba(34,211,238,0.12),transparent_55%)]" />
 

@@ -45,7 +45,7 @@ export default function ResourcePreview({ resource }: ResourcePreviewProps) {
       <motion.div
         animate={floatingAnimation}
         whileHover={{ scale: 1.02, y: -10, transition: { duration: 0.3 } }}
-        className="relative w-full aspect-[4/3] md:aspect-video rounded-3xl z-10 group"
+        className="relative w-full aspect-4/3 md:aspect-video rounded-3xl z-10 group"
       >
         {/* Glow behind the card */}
         <div className="absolute -inset-4 bg-linear-to-r from-cyan-500/30 via-purple-500/30 to-blue-500/30 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-80 transition-opacity duration-500" />
@@ -94,7 +94,7 @@ export default function ResourcePreview({ resource }: ResourcePreviewProps) {
             )}
             
             {/* Scanline overlay for futuristic effect */}
-            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0)_50%,rgba(0,0,0,0.1)_50%)] bg-[length:100%_4px] pointer-events-none opacity-20" />
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0)_50%,rgba(0,0,0,0.1)_50%)] bg-size-[100%_4px] pointer-events-none opacity-20" />
           </div>
         </div>
 
