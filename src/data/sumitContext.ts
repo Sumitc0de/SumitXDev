@@ -1,5 +1,6 @@
 import { PROJECTS } from "@/constants/projects";
 import { skillLayers } from "@/data/skillLayers";
+import { RESOURCES } from "@/data/resources";
 
 // ─── Structured portfolio context injected into AI system prompt ────────────
 
@@ -46,6 +47,14 @@ function formatSkills(): string {
         `**${layer.title}** (${layer.subtitle}): ${layer.skills.join(", ")}`
     )
     .join("\n");
+}
+
+/** Build a formatted string of all resources for the AI context */
+function formatResources(): string {
+  return RESOURCES.map(
+    (r) =>
+      `- **${r.title}** (${r.category}): ${r.description}. Link: /resources/${r.slug}`
+  ).join("\n");
 }
 
 /** The full system prompt sent to OpenAI */
@@ -108,11 +117,8 @@ SERVICES SUMIT OFFERS:
 - Social Media Ad Visuals — thumb-stopping visuals for Instagram, Facebook
 
 **CodeMinded Vault (Resources):**
-Sumit maintains a "CodeMinded Vault" resources page (/resources) containing high-quality developer resources:
-- Cheatsheets (Next.js, Tailwind)
-- Roadmaps (Full-Stack, DSA)
-- AI Tools (Free APIs, Prompts)
-- Developer Notes
+Sumit maintains an extensive "Resource Vault" (/resources) with SEO-optimized developer tools. When users ask for learning materials, roadmaps, or cheatsheets, recommend these specific resources:
+${formatResources()}
 
 BEHAVIOR RULES & FORMATTING:
 1. **Formatting:** Use short, punchy paragraphs. Break down information using bullet points or numbered lists. Use emojis tastefully to make the response visually appealing.
