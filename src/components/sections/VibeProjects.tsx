@@ -83,6 +83,19 @@ export default function VibeProjects() {
                     name: "Sumit Vishwakarma",
                   },
                 },
+                {
+                  "@type": "SoftwareApplication",
+                  name: "Wedora",
+                  description:
+                    "A luxury wedding planner platform with a high-end aesthetic and optimized user workflows.",
+                  applicationCategory: "WebApplication",
+                  operatingSystem: "Web",
+                  url: "https://wedora-nu.vercel.app/",
+                  author: {
+                    "@type": "Person",
+                    name: "Sumit Vishwakarma",
+                  },
+                },
               ],
             }),
           }}
@@ -114,6 +127,15 @@ export default function VibeProjects() {
             tech={["Next.js", "Tailwind CSS", "Vibecoded"]}
             liveUrl="https://spicekart-six.vercel.app/"
             githubUrl="https://github.com/Sumitc0de/new_project_01"
+            vibe
+          />
+
+          <ProjectCard
+            title="Wedora"
+            description="A luxury wedding planner platform with a high-end aesthetic."
+            tech={["Next.js", "React", "Tailwind CSS", "Vibecoded"]}
+            liveUrl="https://wedora-nu.vercel.app/"
+            githubUrl="https://github.com/Sumitc0de/wedora"
             vibe
           />
         </div>

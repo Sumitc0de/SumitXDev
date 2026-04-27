@@ -116,6 +116,16 @@ export const PROJECTS: Project[] = [
         githubUrl: "https://github.com/Sumitc0de/new_project_01",
         status: "Live",
         category: "Web",
+    },
+    {
+        id: "wedora",
+        title: "Wedora",
+        description: "A luxury wedding planner platform with a high-end 'Nocturne Gilded' aesthetic and optimized user workflows.",
+        tech: ["Next.js", "React", "Tailwind CSS", "Vibecoded"],
+        liveUrl: "https://wedora-nu.vercel.app/",
+        githubUrl: "https://github.com/Sumitc0de/wedora",
+        status: "Live",
+        category: "Web",
     }
 ];
 
